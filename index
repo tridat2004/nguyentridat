@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        /* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #77dd77;
+    padding: 20px 0;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    color: #fff;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#products {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.product {
+    float: left;
+    width: 30%;
+    margin: 0 2%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+button {
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color:red;
+}
+
+footer {
+    background-color: #77dd77;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nguyễn Trí Đạt - 22810310113</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Giỏ Hàng</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="products">
+        <div class="container">
+            <h2>Sản Phẩm</h2>
+            <div class="product">
+                <img src="https://lzd-img-global.slatic.net/g/p/bebf400b4fde779a5bcdfb55e95d431e.jpg_720x720q80.jpg_.webp.jpg" alt="Sản Phẩm 1">
+                <h3>Sản Phẩm 1</h3>
+                <p>Mô tả ngắn về sản phẩm 1.</p>
+                <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+                <button onclick="buy()">Mua hàng</button>
+
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.kDMBx_oqD69OVfR4joWRLwHaHa?w=794&h=794&rs=1&pid=ImgDetMain.jpg" alt="Sản Phẩm 2">
+                <h3>Sản Phẩm 2</h3>
+                <p>Mô tả ngắn về sản phẩm 2.</p>
+                <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+                <button onclick="buy()">Mua hàng</button>
+
+            </div>
+            
+            <!-- Thêm nhiều sản phẩm khác tương tự -->
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>Bản quyền © 2024 Fashion Shop. Đã đăng ký.</p>
+        </div>
+    </footer>
+
+    <div id="cart">
+        <h2>Giỏ hàng</h2>
+        <div id="cart-items"></div>
+        <div id="total-amount"></div>
+        <button onclick="buy()">Mua hàng</button>
+    </div>
+
+    <script src="test.js"></script>
+
+</body>
+</html>
